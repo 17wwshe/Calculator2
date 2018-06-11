@@ -1,0 +1,97 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:3:5-51
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+application
+ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\90ae248ada7f8af4d0e947703159efe517bf26aa\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\b8449e47448fdbe089eae20b013789dc484eb248\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\c2bd58a85bd07abfd37d9633afcc034fd274d011\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\1bd72c3d4008ba715c82367757a9307abbbe0a60\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\442e932e55196652e5f8277979c504169bc1a27a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\3673726ba29a3c242ff079aee1ca2c4f4b2890f1\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\f69de37eff250d9983d8568e173ece53a0751c76\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\b5b41be2882c5b5b5e70e02e0c23104e989a3f0c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\6cecd6cfc3c688a62b3330b3438dd91e0e4f5d56\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\4858a61b32629b553c7154e29000de5b56b3fe3b\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bd466089d475a07d7602d644bf815c8d959631ab\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.administrator.calculator.MainActivity
+ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:13:9-22:20
+	android:screenOrientation
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:16:13-47
+	android:label
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:15:13-45
+	android:name
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:14:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\90ae248ada7f8af4d0e947703159efe517bf26aa\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\b8449e47448fdbe089eae20b013789dc484eb248\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\c2bd58a85bd07abfd37d9633afcc034fd274d011\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\93c3cb8184c133272b20d88fda6ce9c88ab4fd26\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\1bd72c3d4008ba715c82367757a9307abbbe0a60\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\442e932e55196652e5f8277979c504169bc1a27a\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\3673726ba29a3c242ff079aee1ca2c4f4b2890f1\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\f69de37eff250d9983d8568e173ece53a0751c76\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\b5b41be2882c5b5b5e70e02e0c23104e989a3f0c\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\6cecd6cfc3c688a62b3330b3438dd91e0e4f5d56\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\4858a61b32629b553c7154e29000de5b56b3fe3b\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bd466089d475a07d7602d644bf815c8d959631ab\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\90ae248ada7f8af4d0e947703159efe517bf26aa\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\MyApplication\Calculator\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\90ae248ada7f8af4d0e947703159efe517bf26aa\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\b8449e47448fdbe089eae20b013789dc484eb248\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\c2bd58a85bd07abfd37d9633afcc034fd274d011\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\93c3cb8184c133272b20d88fda6ce9c88ab4fd26\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\1bd72c3d4008ba715c82367757a9307abbbe0a60\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\442e932e55196652e5f8277979c504169bc1a27a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\3673726ba29a3c242ff079aee1ca2c4f4b2890f1\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\f69de37eff250d9983d8568e173ece53a0751c76\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\b5b41be2882c5b5b5e70e02e0c23104e989a3f0c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\6cecd6cfc3c688a62b3330b3438dd91e0e4f5d56\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\4858a61b32629b553c7154e29000de5b56b3fe3b\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bd466089d475a07d7602d644bf815c8d959631ab\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\90ae248ada7f8af4d0e947703159efe517bf26aa\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\90ae248ada7f8af4d0e947703159efe517bf26aa\output\AndroidManifest.xml:26:9-47
