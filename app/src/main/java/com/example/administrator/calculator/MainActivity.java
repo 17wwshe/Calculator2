@@ -40,17 +40,17 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         int mCurrentOrientation = getResources().getConfiguration().orientation;
         if (mCurrentOrientation == Configuration.ORIENTATION_PORTRAIT) {
             // If current screen is portrait
-            Log.i("info", "portrait"); // 竖屏
+            Log.i("info", "portrait"); // 竖屏日志
             initView_por();
-            initEvent_por();  //初始化组件
+            initEvent_por();  //初始化竖屏组件
 
         } else if (mCurrentOrientation == Configuration.ORIENTATION_LANDSCAPE) {
             //If current screen is landscape
-            Log.i("info", "landscape"); // 横屏
+            Log.i("info", "landscape"); // 横屏日志
             initView_por();
             initView_land();
-            initEvent_por();  //初始化组件
-            initEvent_land();  //初始化组件
+            initEvent_por();  //初始化竖屏组件
+            initEvent_land();  //初始化横屏组件
         }
     }
 
@@ -104,28 +104,28 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         /*
         数字按钮初始化
          */
-        bt0 = (Button) findViewById(R.id.button19);
-        bt1 = (Button) findViewById(R.id.button15);
-        bt2 = (Button) findViewById(R.id.button16);
-        bt3 = (Button) findViewById(R.id.button17);
-        bt4 = (Button) findViewById(R.id.button11);
-        bt5 = (Button) findViewById(R.id.button12);
-        bt6 = (Button) findViewById(R.id.button13);
-        bt7 = (Button) findViewById(R.id.button6);
-        bt8 = (Button) findViewById(R.id.button7);
-        bt9 = (Button) findViewById(R.id.button8);
+        bt0 = (Button) findViewById(R.id.bt_0);
+        bt1 = (Button) findViewById(R.id.bt_1);
+        bt2 = (Button) findViewById(R.id.bt_2);
+        bt3 = (Button) findViewById(R.id.bt_3);
+        bt4 = (Button) findViewById(R.id.bt_4);
+        bt5 = (Button) findViewById(R.id.bt_5);
+        bt6 = (Button) findViewById(R.id.bt_6);
+        bt7 = (Button) findViewById(R.id.bt_7);
+        bt8 = (Button) findViewById(R.id.bt_8);
+        bt9 = (Button) findViewById(R.id.bt_9);
         /*
            运算符按钮初始化
          */
-        add = (Button) findViewById(R.id.button14);
-        sub = (Button) findViewById(R.id.button10);
-        div = (Button) findViewById(R.id.button4);
-        multiply = (Button) findViewById(R.id.button5);
-        reset = (Button) findViewById(R.id.button3);
-        cancel = (Button) findViewById(R.id.button9);
-        percent = (Button) findViewById(R.id.button18);
-        point = (Button) findViewById(R.id.button20);
-        calculate = (Button) findViewById(R.id.button21);
+        add = (Button) findViewById(R.id.bt_add);
+        sub = (Button) findViewById(R.id.bt_sub);
+        div = (Button) findViewById(R.id.bt_div);
+        multiply = (Button) findViewById(R.id.bt_multiply);
+        reset = (Button) findViewById(R.id.bt_C);
+        cancel = (Button) findViewById(R.id.bt_DEL);
+        percent = (Button) findViewById(R.id.bt_per);
+        point = (Button) findViewById(R.id.bt_point);
+        calculate = (Button) findViewById(R.id.bt_equals);
 
         text = (TextView) findViewById(R.id.textView2);
         //
@@ -158,44 +158,18 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     //横屏实现按钮的初始化
     private void initView_land() {
-//        /*
-//        数字按钮初始化
-//         */
-//        bt0 = (Button) findViewById(R.id.button19);
-//        bt1 = (Button) findViewById(R.id.button15);
-//        bt2 = (Button) findViewById(R.id.button16);
-//        bt3 = (Button) findViewById(R.id.button17);
-//        bt4 = (Button) findViewById(R.id.button11);
-//        bt5 = (Button) findViewById(R.id.button12);
-//        bt6 = (Button) findViewById(R.id.button13);
-//        bt7 = (Button) findViewById(R.id.button6);
-//        bt8 = (Button) findViewById(R.id.button7);
-//        bt9 = (Button) findViewById(R.id.button8);
-//        /*
-//           运算符按钮初始化
-//         */
-//        add = (Button) findViewById(R.id.button14);
-//        sub = (Button) findViewById(R.id.button10);
-//        div = (Button) findViewById(R.id.button4);
-//        multiply = (Button) findViewById(R.id.button5);
-//        reset = (Button) findViewById(R.id.button3);
-//        cancel = (Button) findViewById(R.id.button9);
-//        percent = (Button) findViewById(R.id.button18);
-//        point = (Button) findViewById(R.id.button20);
-//        calculate = (Button) findViewById(R.id.button21);
-//        //
-        square = (Button) findViewById(R.id.button);
-        cube = (Button) findViewById(R.id.button2);
-        Nth = (Button) findViewById(R.id.button22);
-        sin = (Button) findViewById(R.id.button24);
-        cos = (Button) findViewById(R.id.button23);
-        tan = (Button) findViewById(R.id.button25);
-        lg = (Button) findViewById(R.id.button31);
-        ln = (Button) findViewById(R.id.button30);
-        e = (Button) findViewById(R.id.button29);
-        factorial = (Button) findViewById(R.id.button26);
-        extract = (Button) findViewById(R.id.button27);
-        reciprocal = (Button) findViewById(R.id.button28);
+        square = (Button) findViewById(R.id.bt_square);
+        cube = (Button) findViewById(R.id.bt_cube);
+        Nth = (Button) findViewById(R.id.bt_Nth);
+        sin = (Button) findViewById(R.id.bt_sin);
+        cos = (Button) findViewById(R.id.bt_cos);
+        tan = (Button) findViewById(R.id.bt_tan);
+        lg = (Button) findViewById(R.id.bt_lg);
+        ln = (Button) findViewById(R.id.bt_ln);
+        e = (Button) findViewById(R.id.bt_E);
+        factorial = (Button) findViewById(R.id.bt_factory);
+        extract = (Button) findViewById(R.id.bt_sqrt);
+        reciprocal = (Button) findViewById(R.id.bt_dao);
 
             /*
             文本框初始化
@@ -207,25 +181,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     //横屏监听器
     private void initEvent_land() {
-//        bt0.setOnClickListener(this);
-//        bt1.setOnClickListener(this);
-//        bt2.setOnClickListener(this);
-//        bt3.setOnClickListener(this);
-//        bt4.setOnClickListener(this);
-//        bt5.setOnClickListener(this);
-//        bt6.setOnClickListener(this);
-//        bt7.setOnClickListener(this);
-//        bt8.setOnClickListener(this);
-//        bt9.setOnClickListener(this);
-//        add.setOnClickListener(this);
-//        sub.setOnClickListener(this);
-//        div.setOnClickListener(this);
-//        multiply.setOnClickListener(this);
-//        reset.setOnClickListener(this);
-//        cancel.setOnClickListener(this);
-//        percent.setOnClickListener(this);
-//        point.setOnClickListener(this);
-//        calculate.setOnClickListener(this);
         square.setOnClickListener(this);
         cube.setOnClickListener(this);
         Nth.setOnClickListener(this);
@@ -238,7 +193,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         factorial.setOnClickListener(this);
         extract.setOnClickListener(this);
         reciprocal.setOnClickListener(this);
-//        text.setKeyListener(null);
     }
 
     /**
@@ -254,33 +208,33 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             /*
              * 数字
              */
-            case R.id.button19://0
-            case R.id.button15://1
-            case R.id.button16://2
-            case R.id.button17://3
-            case R.id.button11://4
-            case R.id.button12://5
-            case R.id.button13://6
-            case R.id.button6://7
-            case R.id.button7://8
-            case R.id.button8://9
-            case R.id.button20://.
+            case R.id.bt_0://0
+            case R.id.bt_1://1
+            case R.id.bt_2://2
+            case R.id.bt_3://3
+            case R.id.bt_4://4
+            case R.id.bt_5://5
+            case R.id.bt_6://6
+            case R.id.bt_7://7
+            case R.id.bt_8://8
+            case R.id.bt_9://9
+            case R.id.bt_point://.
                 str += ((Button) v).getText();
                 text.setText(str);
 //                Toast.makeText(this,"click",Toast.LENGTH_LONG).show();  //如果被点击则提示“click”
                 break;
 
             //可以实现连续计算，str+=。。。
-            case R.id.button14://+
-            case R.id.button10://-
-            case R.id.button5://*
-            case R.id.button4:///
+            case R.id.bt_add://+
+            case R.id.bt_sub://-
+            case R.id.bt_multiply://*
+            case R.id.bt_div:///
                 str += " " + ((Button) v).getText() + " ";
                 text.setText(str);
                 break;
             //运算符输入时在两端加空格，以标志，在之后可以根据空格的位置，提取出运算符和数字
             //删除，判断字符串长度，0和1都置为0，大于1则长度减少一位
-            case R.id.button9:  //DEL
+            case R.id.bt_DEL:  //DEL
                 if (clear_flag) {
                     clear_flag = false;
                     str = "";
@@ -291,14 +245,14 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 }
                 break;
             //clean
-            case R.id.button3:  //C
+            case R.id.bt_C:  //C
                 clear_flag = false;
                 str = "";
                 text.setText(str);
                 break;
 
             //%
-            case R.id.button18:
+            case R.id.bt_per:
                 if (str.length() != 0){
                     result = Double.toString((Double.valueOf(str)) / 100.0);
                     clear_flag = false;
@@ -312,12 +266,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 break;
 
             //=按钮
-            case R.id.button21:
+            case R.id.bt_equals:
                 getResult();
                 break;
 
             //平方
-            case R.id.button:
+            case R.id.bt_square:
                 if (str.length() != 0) {
                     double temp = Double.valueOf(str);
                     result = Double.toString(temp * temp);
@@ -329,7 +283,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 break;
 
             //立方
-            case R.id.button2:
+            case R.id.bt_cube:
                 if (str.length() != 0) {
                     double temp = Double.valueOf(str);
                     result = Double.toString(temp * temp * temp);
@@ -341,7 +295,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 break;
 
             //x的y次方
-            case R.id.button22:
+            case R.id.bt_Nth:
                 if (str.length() != 0) {
                     str += " " + "^" + " ";
                     text.setText(str);
@@ -351,12 +305,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 }
                 break;
 
-            case R.id.button24:  //sin
-            case R.id.button23:  //cos
-            case R.id.button25:  //tan
-            case R.id.button31:  //lg
-            case R.id.button30:  //ln
-            case R.id.button26:  //!
+            case R.id.bt_sin:  //sin
+            case R.id.bt_cos:  //cos
+            case R.id.bt_tan:  //tan
+            case R.id.bt_lg:  //lg
+            case R.id.bt_ln:  //ln
+            case R.id.bt_factory:  //!
                 if (clear_flag) {
                     clear_flag = false;
                     str = "";
@@ -366,7 +320,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 text.setText(str);
                 break;
 
-            case R.id.button27:  //开方
+            case R.id.bt_sqrt:  //开方
                 if (str.length() != 0) {
                     double temp = Double.valueOf(str);
                     result = Double.toString(Math.sqrt(temp));
@@ -381,7 +335,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 text.setText(result);
                 break;
 
-            case R.id.button28: //倒数
+            case R.id.bt_dao: //倒数
                 if (str.length() != 0) {
                     double temp = 1 / Double.valueOf(str);
                     temp = (double) Math.round(temp * 100) / 100;  //保留两位小数
@@ -396,7 +350,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 }
                 text.setText(result);
                 break;
-            case R.id.button29:  //e
+            case R.id.bt_E:  //e
                 str = "";
                 double e= Math.E;
                 result = Double.toString(e);
@@ -442,20 +396,33 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if (!param1.equals("") && !param2.equals("")) {          //如果两个因数不为空
                 arg1 = Double.parseDouble(param1);
                 arg2 = Double.parseDouble(param2);
-                if (op.equals("+")) {
-                    Result = arg1 + arg2;
-                } else if (op.equals("-")) {
-                    Result = arg1 - arg2;
-                } else if (op.equals("×")) {
-                    Result = arg1 * arg2;
-                } else if (op.equals("÷")) {
-                    if (arg2 == 0) {
-                        Result = 0;
-                    } else {
-                        Result = arg1 / arg2;
-                    }
+                switch (op){
+                    case "+": Result = arg1 + arg2;break;
+                    case "-": Result = arg1 - arg2;break;
+                    case "×": Result = arg1 * arg2;break;
+                    case "÷":
+                        if (arg2 == 0) {
+                            Result = 0;
+                        } else {
+                            Result = arg1 / arg2;
+                        }
+                        break;
+                    default: Result = 0;
                 }
-                else Result = 0;
+//                if (op.equals("+")) {
+//                    Result = arg1 + arg2;
+//                } else if (op.equals("-")) {
+//                    Result = arg1 - arg2;
+//                } else if (op.equals("×")) {
+//                    Result = arg1 * arg2;
+//                } else if (op.equals("÷")) {
+//                    if (arg2 == 0) {
+//                        Result = 0;
+//                    } else {
+//                        Result = arg1 / arg2;
+//                    }
+//                }
+//                else Result = 0;
                 //非除法运算，整数的为整数输出
                 if (!param1.contains(".") && !param2.contains(".") && !op.equals("÷")) {
                     int r = (int) Result;
